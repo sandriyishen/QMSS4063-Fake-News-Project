@@ -257,7 +257,7 @@ colors = brewer.pal(3, "Set1"),
 title.size = 1.5, max.words = 200)
 ```
 
-In 2008, "markets" and other business topics dominated the written word landscape. 2008 was the year of the mortgage market collapse in the United States, so it is not surprising to find "market" the keyword of that year. For 2012 and 2016, the picture is not as clear, although articles in 2012 seem to be focused on industrial issues, and those in 2016 seem to be concentrated around social and election issues. We could not decipher any definitive trends from this text analysis, but we find it telling that many of the most frequent subjects appear to be subjects that were likely election topics at the time.
+In 2008, "markets" and other business topics dominated the written word landscape. 2008 was the year of the mortgage market collapse in the United States, so it is not surprising to find "market" the keyword of that year. For 2012 and 2016, the picture is not as clear, although articles in 2012 seem to be focused on industrial issues, and those in 2016 seem to be concentrated around social and election issues. We could not decipher any definitive trends from this text analysis, but we find it telling that many of the most frequent subjects appear to be subjects that were likely election topics at the time. As per our findings below, we do not think it is a coincidence.
 
 
 ## Demographics
@@ -523,9 +523,9 @@ leaflet(US_nps_map) %>%
 ```
 
 
-Finally, we provide an additional map of distribution of confidence in the press in the world, created from the World Values Survey 2010-2014. We also provide a layer on educational attainment, which seems to slightly correlate with the confidence in the press levels.
-
 #### World Values Survey 2010-2014
+
+Finally, we provide an additional map of distribution of confidence in the press in the world, created from the World Values Survey 2010-2014. We also provide layers on confidence in political parties and in the government in the countries displayed. As can be seen, confidence in the press is again correlated with confidence in the government, even on this international scale.
 
 ```{r WVS Spatial, results = 'hide', fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
 if (!require("plyr")) {
@@ -811,7 +811,9 @@ leaflet(world_dat) %>%
 ```
 
 
-The overall conclusion of this exploratory project is that confidence or trust in the media is most correlated with confidence or trust in governmental institutions. The distribution of correlation and a little evidence of correlation between trust in the press and religion from the Middle East makes us believe that trust in the media is a function of how represented by the media the respondent feels he or she is, but more research is needed than simply a visualization project to confirm such a theory.
+The overall conclusion of this exploratory project is that confidence or trust in the media is most correlated with confidence or trust in governmental institutions. The distribution of correlations in the graphs and a little evidence of correlation between trust in the press and religion from the Middle East makes us believe that trust in the media may also be a function of how represented by the media the respondent feels he or she is, but more research is needed than simply a visualization project to confirm such a theory.
+
+
 
 ## PROJECT BOOK
 
